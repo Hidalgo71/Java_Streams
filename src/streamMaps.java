@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class streamMap
+public class streamMaps
 {
     @Test
     public void streamMap()
@@ -13,6 +13,6 @@ public class streamMap
                                                                                                     .forEach(System.out::println);                      //Map method takes a text but last letter is "a" and printing the word uppercase
 
         List<String> names = Arrays.asList("Ahmet", "Mehmet", "Neslihan", "Adnan", "Yekta", "Adam", "Ozlem");
-        names.stream().filter(s -> s.startsWith("A")).sorted().map(s -> s.toUpperCase()).forEach(System.out::println);                      //Sorting the words but only 1st letter is 'A'
+        names.stream().filter(s -> s.startsWith("A")).sorted().map(String::toUpperCase).forEach(System.out::println);                      //Sorting the words but only 1st letter is 'A'
     }
 }

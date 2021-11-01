@@ -3,7 +3,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
-public class streamFilter
+public class streamFilters
 {
     //@Test
     /*public void regular()       //Non-optimized method
